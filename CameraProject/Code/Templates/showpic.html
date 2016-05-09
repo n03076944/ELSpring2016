@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<h3> Images</h3>
+
+{{image_names}}
+<hr>
+{% for image_name in image_names %}
+
+<img src="{{url_for('send_image',filename=image_name)}}" height=200 width=200>
+
+
+{% endfor %}
+
+
+
+<h4> </h4>
+
+</body>
+
+</html>
+
+
